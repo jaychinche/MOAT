@@ -35,7 +35,7 @@ export default function IndivEmpDetail() {
   const fetchEmployeeData = (type) => {
     setLoading(true);
     const token = localStorage.getItem('token'); 
-    fetch(`http://localhost:4000/employee-user/${id}/${type}`, {
+    fetch(`https://moat-2.onrender.com/employee-user/${id}/${type}`, {
       method: "GET",
       headers: {
         'x-auth-token': token, // Send the token in the custom header
