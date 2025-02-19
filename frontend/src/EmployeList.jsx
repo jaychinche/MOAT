@@ -24,7 +24,7 @@ export default function EmployeeListPage(props) {
 
   useEffect(() => {
     const token = localStorage.getItem('token'); 
-    fetch("http://localhost:4000/emplist", {
+    fetch("https://moat-2.onrender.com/emplist", {
       method: "GET",
       headers: {
         'x-auth-token': token, 
