@@ -6,8 +6,8 @@ import EmployeList from "./EmployeList"
 import IndivEmpDetail from "./IndivEmpDetail";
 import AddEmployee from "./AddEmployee";
 import DashboardUser from "./dashboardMain/DashboardUser";
-import IndivDetail from "./indivDetail";
-import PageNotFound from "./ PageNotFound";
+import IndivDetail from "./IndivDetail";
+import PageNotFound from "./PageNotFound";
 import AddEmployeePage  from "./AddEmployee"
 
 const App = () => {
