@@ -37,7 +37,7 @@ export default function IndivEmpDetail() {
 
   const fetchEmployeeData = (type) => {
     setLoading(true);
-    fetch(`http://localhost:4000/employee-admin/${email}/${type}`)
+    fetch(`https://moat-2.onrender.com/employee-admin/${email}/${type}`)
       .then((response) => {
         if (!response.ok) {
           return response.json().then((errorData) => {
