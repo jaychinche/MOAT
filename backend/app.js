@@ -116,7 +116,7 @@ Below are your login credentials:
 Email: ${email}
 Password: ${password} (Please change your password after logging in)
 
-Login here:[Click to Sign In](https://moat-m36l.vercel.app)  
+Login here:[Click to Sign In](https://moat-glr5.vercel.app)  
 
 To get started, please log in using the provided credentials.
 
