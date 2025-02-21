@@ -5,9 +5,10 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { styled } from '@mui/material/styles';
-import dashboardImage from "./dashboardImage.jpg"
-import { Link, useNavigate } from "react-router-dom";
+import { styled, useTheme } from '@mui/material/styles';
+import dashboardImage from "./dashboardImage.jpg";
+import { Link } from "react-router-dom";
+
 // Styled Background Box
 const StyledBox = styled(motion.div)(({ theme }) => ({
   display: 'flex',
@@ -30,6 +31,9 @@ const StyledBox = styled(motion.div)(({ theme }) => ({
 }));
 
 export default function Hero() {
+  const theme = useTheme();
+  const isLightTheme = theme.palette.mode === 'light';
+
   return (
     <Box sx={{ width: '100%', backgroundRepeat: 'no-repeat' }}>
       <Container
@@ -73,7 +77,7 @@ export default function Hero() {
               }}
             >
               <br />
-              <span style={{ color: 'white' }}>Real-Time</span>
+              <span style={{ color: isLightTheme ? 'black' : 'white' }}>Real-Time</span>
               <span style={{ color: '#4A90E2' }}> Activity Tracking</span>
             </Typography>
 
@@ -100,11 +104,11 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
             >
-            <Link to="/dashboard" style={{ textDecoration: 'none' }}>
-            <Button variant="contained" color="primary" size="large">
-                Start Tracking
-            </Button>
-        </Link>
+              <Link to="/dashboard" style={{ textDecoration: 'none' }}>
+                <Button variant="contained" color="primary" size="large">
+                  Start Tracking
+                </Button>
+              </Link>
               <Button variant="outlined" color="primary" size="large">
                 Live Dashboard
               </Button>
