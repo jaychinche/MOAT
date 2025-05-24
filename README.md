@@ -2,7 +2,7 @@
 
 The Multi-OS Activity Tracker is a real-time productivity monitoring tool designed to help HR and managers (Admins) track employee activity across three categories: **Work**, **Time**, and **Idle**. This system provides insights into employee productivity through an interactive dashboard.
 
-![Demo Screenshot](https://your-image-hosting-link.com/demo-screenshot.png)
+# Visual Output
 
 <img width="1440" alt="Screenshot 2025-05-24 at 8 56 28 AM" src="https://github.com/user-attachments/assets/590b77fb-302e-4983-87bb-90d14d4129d0" />
 
@@ -69,7 +69,7 @@ The Multi-OS Activity Tracker is a real-time productivity monitoring tool design
 
 ## 📷 Demo
 
-![Dashboard Demo](https://your-image-hosting-link.com/dashboard-screenshot.png)
+![Dashboard Demo](https://moat-glr5.vercel.app/)
 
 > Replace the above demo links with your actual screenshots hosted on GitHub, Imgur, or another image service.
 
