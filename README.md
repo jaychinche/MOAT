@@ -69,7 +69,7 @@ The Multi-OS Activity Tracker is a real-time productivity monitoring tool design
 
 ## 📷 Demo
 
-![Dashboard Demo](https://moat-glr5.vercel.app/)
+ ## Demo link :https://moat-glr5.vercel.app/
 
 > Replace the above demo links with your actual screenshots hosted on GitHub, Imgur, or another image service.
 
