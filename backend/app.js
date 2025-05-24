@@ -45,7 +45,7 @@ app.use(cookieParser());
 
 const ORIGIN=process.env.ORIGIN;
 app.use(cors({
-  origin: "https://moat-glr5.vercel.app",
+  origin: "https://multi-user-activity-tracker.netlify.app",
   credentials: true,  
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization",'x-auth-token']
