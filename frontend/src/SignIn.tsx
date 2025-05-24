@@ -52,7 +52,7 @@ export default function SignIn(props) {
   const [emailErrorMessage, setEmailErrorMessage] = React.useState('');
   const [passwordError, setPasswordError] = React.useState(false);
   const [passwordErrorMessage, setPasswordErrorMessage] = React.useState('');
-  const [usertype, setUsertype] = React.useState("user");
+  const [usertype, setUsertype] = React.useState("admin");
   const [alertMessage, setAlertMessage] = React.useState(null);
   const [alertType, setAlertType] = React.useState("success");
   const navigate = useNavigate();
@@ -144,21 +144,49 @@ export default function SignIn(props) {
         >
           <Typography component="h1" variant="h4">Login</Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ display: 'flex', flexDirection: 'column', width: '100%', gap: 2 }}>
+
+
+
+
             <FormControl>
-              <FormLabel>Email</FormLabel>
-              <TextField error={emailError} helperText={emailErrorMessage} name="email" type="email" required fullWidth />
-            </FormControl>
-            <FormControl>
-              <FormLabel>Password</FormLabel>
-              <TextField error={passwordError} helperText={passwordErrorMessage} name="password" type="password" required fullWidth />
-            </FormControl>
-            <FormControl>
-              <FormLabel>User Type</FormLabel>
-              <Select name="userType" value={usertype} onChange={(e) => setUsertype(e.target.value)} fullWidth>
-                <MenuItem value="user">User</MenuItem>
-                <MenuItem value="admin">Admin</MenuItem>
-              </Select>
-            </FormControl>
+  <FormLabel>Email</FormLabel>
+  <TextField
+    name="email"
+    type="email"
+    required
+    fullWidth
+    defaultValue="chinchejay@gmail.com"
+    error={emailError}
+    helperText={emailErrorMessage}
+  />
+</FormControl>
+
+<FormControl>
+  <FormLabel>Password</FormLabel>
+  <TextField
+    name="password"
+    type="password"
+    required
+    fullWidth
+    defaultValue="123456"
+    error={passwordError}
+    helperText={passwordErrorMessage}
+  />
+</FormControl>
+
+<FormControl>
+  <FormLabel>User Type</FormLabel>
+  <Select
+    name="userType"
+    value={usertype}
+    onChange={(e) => setUsertype(e.target.value)}
+    fullWidth
+  >
+    <MenuItem value="user">User</MenuItem>
+    <MenuItem value="admin">Admin</MenuItem>
+  </Select>
+</FormControl>
+
             <FormControlLabel control={<Checkbox value="remember" color="primary" />} label="Remember me" />
             <Button type="submit" fullWidth variant="contained">Login</Button>
           </Box>
