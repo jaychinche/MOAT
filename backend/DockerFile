@@ -1,0 +1,20 @@
+# Use Node.js official LTS image
+FROM node:18
+
+# Set working directory inside container
+WORKDIR /usr/src/app
+
+# Copy package.json and package-lock.json first (for caching dependencies)
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install --legacy-peer-deps
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose backend port (adjust if needed, e.g., 3000)
+EXPOSE 3000
+
+# Run app (default = production mode)
+CMD ["npm", "run", "prod"]
